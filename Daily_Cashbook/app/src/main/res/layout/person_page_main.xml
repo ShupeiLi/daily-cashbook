@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/person_page_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        android:background="@drawable/person_cover"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/person_page_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/person_page_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:text="@string/welcome"
+            android:textStyle="italic"
+            android:layout_marginBottom="120dp"
+            android:textColor="#FFF"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/person_page_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:textColor="#FFF"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/person_page_set_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/right_arrow"
+        android:text="@string/reset_image"
+        android:gravity="start|center_vertical"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/bg_white"
+        app:layout_constraintTop_toBottomOf="@+id/person_page_RelativeLayout"/>
+
+    <Button
+        android:id="@+id/person_page_set_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/right_arrow"
+        android:text="@string/reset_password"
+        android:gravity="start|center_vertical"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/bg_white"
+        app:layout_constraintTop_toBottomOf="@+id/person_page_set_image"/>
+
+    <Button
+        android:id="@+id/person_page_set_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/right_arrow"
+        android:text="@string/reset_email"
+        android:textSize="18sp"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/bg_white"
+        app:layout_constraintTop_toBottomOf="@+id/person_page_set_password"/>
+
+    <Button
+        android:id="@+id/person_page_set_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/right_arrow"
+        android:text="@string/reset_tel"
+        android:textSize="18sp"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/bg_white"
+        app:layout_constraintTop_toBottomOf="@+id/person_page_set_email"/>
+
+    <Button
+        android:id="@+id/person_page_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/right_arrow"
+        android:text="@string/reminder"
+        android:textSize="18sp"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/bg_white"
+        app:layout_constraintTop_toBottomOf="@+id/person_page_set_tel"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

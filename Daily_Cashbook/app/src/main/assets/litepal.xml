@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="CashbookInfo">
+    </dbname>
+
+    <version value="4">
+    </version>
+
+    <list>
+        <mapping class="com.example.daily_cashbook.dbutils.UserInfo">
+        </mapping>
+        <mapping class="com.example.daily_cashbook.dbutils.Cashbook">
+        </mapping>
+    </list>
+</litepal>

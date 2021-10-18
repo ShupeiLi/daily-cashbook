@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keep_account_income_ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20">
+
+    <EditText
+        android:id="@+id/keep_account_income_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:autofillHints="@string/prompt_amount"
+        android:hint="@string/prompt_amount"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/keep_account_income_calendar_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/prompt_date"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/keep_account_income_calendar_select"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/keep_account_income_calendar_select"/>
+
+    <Button
+        android:id="@+id/keep_account_income_calendar_select"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        app:layout_constraintHorizontal_weight="1.5"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/keep_account_income_amount"
+        app:layout_constraintLeft_toRightOf="@+id/keep_account_income_calendar_display"
+        app:layout_constraintRight_toRightOf="@+id/keep_account_income_comment" />
+
+    <EditText
+        android:id="@+id/keep_account_income_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="2.5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/keep_account_income_calendar_select"
+        app:layout_constraintLeft_toRightOf="@id/keep_account_income_calendar_select"
+        app:layout_constraintRight_toRightOf="parent"
+        android:autofillHints="@string/prompt_comment"
+        android:hint="@string/prompt_comment"
+        android:layout_marginEnd="10dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/keep_account_income_category_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_category"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/keep_account_income_calendar_select" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/keep_account_income_CoordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/keep_account_income_category_display"
+        app:layout_constraintBottom_toTopOf="@+id/keep_account_income_pic1" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/keep_account_income_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <ImageView
+        android:id="@+id/keep_account_income_pic1"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:contentDescription="@string/charge_picture_1"
+        android:padding="1dp"
+        android:src="@drawable/prompt_img"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/keep_account_income_buttons"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/keep_account_income_pic2" />
+
+    <ImageView
+        android:id="@+id/keep_account_income_pic2"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:contentDescription="@string/charge_picture_2"
+        android:padding="1dp"
+        android:src="@drawable/prompt_img"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/keep_account_income_pic1"
+        app:layout_constraintRight_toLeftOf="@+id/keep_account_income_fab"
+        app:layout_constraintBottom_toTopOf="@+id/keep_account_income_buttons"/>
+
+    <LinearLayout
+        android:id="@+id/keep_account_income_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keep_account_income_category_display"
+        app:layout_constraintRight_toLeftOf="@id/keep_account_income_fab"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/keep_account_income_back"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/go_back"
+            android:textColor="@color/hit_gray3"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/keep_account_income_camera"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/choice_open_camera"
+            android:textColor="@color/hit_gray3"
+            android:textSize="16sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/keep_account_income_album"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/album"
+            android:textSize="16sp"
+            android:textColor="@color/hit_gray3"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/keep_account_income_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/hit_gray2"
+        android:contentDescription="@string/confirm"
+        android:src="@drawable/tick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

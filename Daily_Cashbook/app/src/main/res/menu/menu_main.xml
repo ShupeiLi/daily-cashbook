@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">-->
+<!--    <item android:id="@+id/action_settings" android:title="@string/action_settings"-->
+<!--        android:orderInCategory="100" app:showAsAction="never" />-->
+    <group android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/homepage"-->
+<!--            android:icon="@drawable/home"-->
+<!--            android:title="@string/tab_menu_home" />-->
+        <item
+            android:id="@+id/nav_chart"
+            android:icon="@drawable/chart"
+            android:title="@string/tab_menu_dashboard" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="@string/tab_menu_mine" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/tab_menu_logout" />
+    </group>
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_topbar">#FCFCFC</color>
+    <color name="bg_gray">#00F1F1F1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="hit_gray1">#D9D9D9</color>
+    <color name="hit_gray2">#8C8C8C</color>
+    <color name="hit_gray3">#595959</color>
+    <color name="hit_gray4">#262626</color>
+    <color name="hit_gray5">#0D0D0D</color>
+    <color name="gray1">#dfe1e6</color>
+    <color name="gray2">#a3aebf</color>
+    <color name="gray3">#848fa1</color>
+    <color name="gray4">#6f7885</color>
+    <color name="blue_gray">#aac5f0</color>
+
+    <color name="calcAccent">#ef6c00</color>
+
+    <color name="colorSurface">#515151</color>
+
+    <color name="text_gray">#8D7A71</color>
+    <color name="text_black">#000000</color>
+    <color name="text_blue">#0000FF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#694E42</color>
+    <color name="div_white">#E5E5E5</color>
+
+</resources>

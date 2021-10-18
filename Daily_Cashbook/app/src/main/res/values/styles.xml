@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#dfe1e6</item>
+        <item name="colorPrimaryVariant">@color/hit_gray2</item>
+        <item name="colorPrimaryDark">@color/hit_gray3</item>
+        <item name="colorSecondary">@color/teal_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+
+    <style name="MonthPickerDialogStyle" >
+        <item name="monthBgColor">@color/bg_white</item>
+        <item name="monthBgSelectedColor">@color/hit_gray3</item>
+        <item name="monthFontColorSelected">@color/text_black</item>
+        <item name="monthFontColorNormal">@color/text_black</item>
+
+        <item name="headerBgColor">@color/gray1</item>
+        <item name="headerFontColorSelected">@color/text_black</item>
+        <item name="headerFontColorNormal">@color/text_black</item>
+        <item name="headerTitleColor">@color/text_black</item>
+
+        <item name="dialogActionButtonColor">@color/hit_gray3</item>
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:background">@drawable/tab_menu_bg</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>
