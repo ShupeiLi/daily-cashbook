@@ -15,11 +15,9 @@ Grade: 40 / 40.
   <img src="/gallery/home_page.jpg" width="180" />
   <img src="/gallery/home_page_end.jpg" width ="180" /> 
   <img src="/gallery/display_item.jpg" width ="180" /> 
-  <img src="/gallery/drawer.jpg" width ="180" /> 
 </p>
 
 <p float="left" align="center">
-   <img src="/gallery/income.jpg" width ="180" /> 
   <img src="/gallery/expenditure.jpg" width ="180" /> 
   <img src="/gallery/chart_head.jpg" width="180" />
   <img src="/gallery/chart_end.jpg" width ="180" />   
