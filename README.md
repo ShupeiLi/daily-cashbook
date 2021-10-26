@@ -6,7 +6,7 @@
 </p>
 
 ### Note
-Individual project in the course "Computer Program and Data Visualization" (Spring Semester 2021). 
+Individual project in the course "Computer Program and Data Visualization" (Spring 2021). 
 
 Grade: 40 / 40.
 - - -
